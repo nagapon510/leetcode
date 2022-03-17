@@ -17,5 +17,15 @@ public class Solution {
         return null;
     }
 }
+
+
+//LINQ検証中
+public class Solution {
+    public int[] TwoSum(int[] nums, int target) {
+        var numsList = nums.toList();
+        numsList.where(i, j => nums[i] + nums[j] == target);
+        return new int[] {i,j};
+    }
+}
 // @lc code=end
 
