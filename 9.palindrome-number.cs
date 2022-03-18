@@ -7,8 +7,12 @@
 // @lc code=start
 public class Solution {
     public bool IsPalindrome(int x) {
-        
+        string strX = x.ToString();
+        var reverseX = new string(strX.Reverse().ToArray());
+        if (strX == reverseX) {
+            return true;
+        }
+        return false;
     }
 }
 // @lc code=end
-
