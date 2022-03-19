@@ -4,6 +4,10 @@
  * [1] Two Sum
  */
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
 // @lc code=start
 public class Solution {
     public int[] TwoSum(int[] nums, int target) {
@@ -17,3 +21,13 @@ public class Solution {
         return new int[0];
     }
 }
+
+
+//LINQ検証中
+public class Solution {
+    public int[] TwoSum(int[] nums, int target) {
+        var numsList = nums.where(i, j => nums[i] + nums[j] == target);
+        return new int[] {i,j};
+    }
+}
+// @lc code=end
